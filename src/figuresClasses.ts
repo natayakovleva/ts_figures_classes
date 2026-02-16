@@ -26,11 +26,6 @@ export class Triangle implements Figure {
     if (longest >= sumOfOthers) {
       throw new Error(`Sides ${a}, ${b} and ${c} can't form a triangle`);
     }
-
-    this.color = color;
-    this.a = a;
-    this.b = b;
-    this.c = c;
   }
 
   getArea(): number {
@@ -51,9 +46,6 @@ export class Circle implements Figure {
     if (radius <= 0) {
       throw new Error('Radius must be greater than 0');
     }
-
-    this.color = color;
-    this.radius = radius;
   }
 
   getArea(): number {
@@ -74,10 +66,6 @@ export class Rectangle implements Figure {
     if (width <= 0 || height <= 0) {
       throw new Error('Width and height must be greater than 0');
     }
-
-    this.color = color;
-    this.width = width;
-    this.height = height;
   }
 
   getArea(): number {
